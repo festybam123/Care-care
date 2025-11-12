@@ -1,0 +1,290 @@
+#root {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Styles for Buz component */
+.buz-container {
+  /* padding: 10px; */
+  font-family: Arial, sans-serif;
+  /* text-align: center; */
+}
+
+/* .cars-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+} */
+
+.car-item {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 5px;
+  width: 100px;
+  box-sizing: border-box;
+  /* flex: 0 1 calc(30% - 20px); */
+}
+
+
+/* Mobile responsive: 2-column layout on small screens */
+@media (max-width: 768px) {
+  .car-item {
+    width: 20%;
+    flex: 0 1 calc(50% - 16px);
+  }
+}
+
+/* Single column on very small screens */
+@media (max-width: 480px) {
+  .car-item {
+    flex: 0 1 50%;
+  }
+}
+/* 
+.car-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+} */
+
+.car-price {
+  font-weight: bold;
+  color: green;
+}
+
+.cars-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+  gap: 20px;
+  align-items: start;
+  justify-items: center;
+}
+
+.car-item {
+  border: 2px solid #ddd;
+  padding: 15px;
+  margin: 5px 0;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 100%; /* Allow full width in grid */
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.car-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Make images keep a consistent aspect ratio for balanced layout */
+.car-image {
+  width: 100%;
+  height: auto;
+  border: 4px double #333;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-image:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .cars-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cars-section {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets and phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .cars-section {
+    grid-template-columns: repeat(2, 1fr); /* keep 2 columns on most phones in landscape/portrait */
+    gap: 12px;
+  }
+  .car-item {
+    max-width: none;
+    padding: 12px;
+  }
+}
+.total {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 16px;
+}
+
+.checkout-btn {
+  background: #28a745;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+/* .add-btn{
+  background-color: #007bff3a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+} */
+
+/* Styles for CarDetails component */
+.car-details {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.back-link {
+  display: block;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.car-detail-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.car-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile responsive styles for CarDetails */
+@media (max-width: 768px) {
+  .car-details {
+    padding: 15px;
+  }
+
+  .car-detail-image {
+    max-width: 100%;
+  }
+
+  .car-description {
+    font-size: 14px;
+  }
+
+  .car-price {
+    font-size: 16px;
+  }
+
+  .add-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .car-details {
+    padding: 10px;
+  }
+
+  .car-details h1 {
+    font-size: 24px;
+  }
+
+  .car-description {
+    font-size: 13px;
+  }
+
+  .car-price {
+    font-size: 15px;
+  }
+
+  .add-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
