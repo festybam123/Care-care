@@ -157,7 +157,7 @@ function Buz() {
             ))}
             <div className="total">Total: ${total}</div>
             <button className="checkout-btn" onClick={() => alert(`Purchase successful from festybam car dealership! Total: $${total}. (Thanks for the deal!.)`)}>
-              Checkout
+              Click to Purchase
             </button>
           </>
         )}
