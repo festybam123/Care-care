@@ -107,11 +107,11 @@ function CarItem({ car, onAddToCart }) {
 }
 
 // Cart Item Component
-function CartItem({ item, onRemoveFromCart }) {
+function CartItem({ item, onRemoveFromCart, index }) {
   return (
     <div className="cart-item">
-      <span>{item.name} - ${item.price}</span>
-      <button className="btn remove-btn" onClick={() => onRemoveFromCart(item.id)}>Remove</button>
+      <span className="cart-item-text">{item.name} - ${item.price}</span>
+      <button className="remove-btn" onClick={() => onRemoveFromCart(index)}>✕</button>
     </div>
   )
 }
@@ -124,8 +124,8 @@ function Buz() {
     setCart(prev => [...prev, car])
   }
 
-  const removeFromCart = (id) => {
-    setCart(prev => prev.filter(item => item.id !== id))
+  const removeFromCart = (index) => {
+    setCart(prev => prev.filter((item, i) => i !== index))
   }
 
   const total = cart.reduce((sum, item) => sum + item.price, 0)
@@ -153,7 +153,7 @@ function Buz() {
           <>
             {cart.map((item, index) => (
               // use index in key if duplicates of same id are allowed; otherwise item.id is fine
-              <CartItem key={index} item={item} onRemoveFromCart={removeFromCart} />
+              <CartItem key={index} item={item} onRemoveFromCart={removeFromCart} index={index} />
             ))}
             <div className="total">Total: ${total}</div>
             <button className="checkout-btn" onClick={() => alert(`Purchase successful from festybam car dealership! Total: $${total}. (Thanks for the deal!.)`)}>

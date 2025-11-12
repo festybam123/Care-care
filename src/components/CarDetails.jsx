@@ -12,7 +12,7 @@ function CarDetails() {
 
   return (
     <div className="car-details">
-      <Link to="/buz" className="back-link">← Back to Cars</Link>
+      <Link to="/" className="back-link">← Back to Cars</Link>
       <h1>{car.name}</h1>
       <img src={car.image} alt={car.name} className="car-detail-image" />
       <p className="car-description">{car.description}</p>

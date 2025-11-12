@@ -176,14 +176,22 @@
   font-size: 16px;
 }
 
-/* .add-btn{
-  background-color: #007bff3a;
-  color: white;
-  border: none;
-  padding: 8px 16px;
+.add-btn{
+  background-color: transparent;
+  color: black;
+  border: 1px solid #007bff00;
+  padding: 12px 24px;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.3s ease;
   margin-top: 8px;
+}
+
+/* .add-btn:hover{
+  color: yellow;
+  background-color: aqua;
 } */
 
 /* Styles for CarDetails component */
@@ -226,11 +234,11 @@
 }
 
 .add-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
+  background-color: rgba(0, 0, 0, 0.048);
+  border-radius: 7px;
+  width: auto;
+  color: rgba(0, 0, 0, 0.774);
   padding: 12px 24px;
-  border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   width: 100%;
@@ -238,7 +246,44 @@
 }
 
 .add-btn:hover {
-  background-color: #0056b3;
+  border-color: #646cff;
+  border-radius: 7px;
+  width: auto;
+}
+
+.remove-btn {
+  background-color: rgba(0, 0, 0, 0.158);
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.remove-btn:hover {
+  background-color: #ff5252;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 4px 0;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.cart-item-text {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
 }
 
 /* Mobile responsive styles for CarDetails */
