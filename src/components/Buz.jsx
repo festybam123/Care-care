@@ -5,84 +5,84 @@ const cars = [
   {
     id: 1,
     name: 'Tesla',
-    description: 'Electric vehicle with cutting-edge technology and autopilot features.',
+    description: 'Electric vehicle with edge technology.',
     price: 25000,
     image: '/image/car1.jfif'
   },
   {
     id: 2,
     name: 'Honda CR-V',
-    description: 'Reliable SUV with excellent efficiency and spacious interior.',
+    description: 'Reliable SUV with excellent efficiency.',
     price: 35000,
     image: '/image/car2.jfif'
   },
   {
     id: 3,
     name: 'Mustang',
-    description: 'Iconic American muscle car with powerful V8 engine and sporty design.',
+    description: 'Iconic American muscle car with powerful.',
     price: 45000,
     image: '/image/car3.jfif'
   },
   {
     id: 4,
     name: 'corolla',
-    description: 'Reliable and fuel-efficient compact sedan perfect for daily commuting.',
+    description: 'Reliable fuel-efficient compact sedan.',
     price: 20000,
     image: '/image/car4.jfif'
   },
   {
     id: 5,
     name: 'Highlander',
-    description: 'Spacious SUV with advanced features and comfortable ride.',
+    description: 'Spacious SUV with advanced features.',
     price: 60000,
     image: '/image/car5.jfif'
   },
   {
     id: 6,
     name: 'Toyota camry',
-    description: 'Comfortable sedan with excellent reliability and resale value.',
+    description: 'Comfortable sedan with excellent reliability.',
     price: 30000,
     image: '/image/car6.jpg'
   },
   {
     id: 7,
     name: 'Toyota Avenis',
-    description: 'Stylish premium sedan with advanced technology and luxurious interior.',
+    description: 'Stylish sedan with advanced technology.',
     price: 40000,
     image: '/image/car7.jfif'
   },
   {
     id: 8,
     name: 'Hyundai',
-    description: 'Affordable and reliable vehicles with features and warranty.',
+    description: 'Affordable and reliable vehicles.',
     price: 55000,
     image: '/image/car8.jpg'
   },
   {
     id: 9,
     name: 'GLE 2018',
-    description: 'Luxury midsize SUV with advanced technology and premium comfort.',
+    description: 'Luxury midsize with advanced technology.',
     price: 18000,
     image: '/image/car9.jfif'
   },
   {
     id: 10,
     name: 'Peugeout 408',
-    description: 'Stylish fastback sedan with European design and modern features.',
+    description: 'Stylish fastback sedan with European design.',
     price: 38000,
     image: '/image/car10.jfif'
   },
   {
     id: 11,
     name: 'Almera',
-    description: 'Compact and economical sedan with good fuel efficiency and reliability.',
+    description: 'Compact and economical sedan.',
     price: 32000,
     image: '/image/car11.jfif'
   },
   {
     id: 12,
     name: 'Range rover',
-    description: 'Luxury SUV with off-road capability and premium interior finishes.',
+    description: 'Luxury SUV with off-road capability.',
     price: 70000,
     image: '/image/car12.jfif'
   }
