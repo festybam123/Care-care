@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+//List of cars including their names and decription//
 const cars = [
   {
     id: 1,
@@ -133,7 +134,7 @@ function Buz() {
   return (
     <div className="buz-container">
       <h1>🚗 Festybam Car Dealership</h1>
-      <p>Browse our selection of cars and add them to your cart to "buy"!</p>
+      <p>Browse our selection of cars and add them to your cart to buy!</p>
       <h2>Available Cars</h2>
 
       {/* Car List */}
